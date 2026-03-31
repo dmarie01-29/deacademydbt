@@ -18,6 +18,10 @@ models:
                 config:
                   severity: warn
 # default severity is 'failed', severity options are 'warn', 'error'
+      - name: emp_salary
+        data_tests:
+          - salary_check
+          
 
 sources:
   - name: employee
