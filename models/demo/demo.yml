@@ -28,6 +28,9 @@ models:
 
   - name: sales
     description: "DBT Model for the sales incremental table"
+
+  - name: product
+    description: "DBT Model for the product table"  
     
 sources:
   - name: employee
@@ -41,9 +44,15 @@ sources:
     schema: PUBLIC
     tables:
       - name: CUSTOMER_SRC
-      
+
   - name: sales
     database: DBT_DB
     schema: PUBLIC
     tables:
       - name: SALES_SRC
+
+  - name: product
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PRODUCT_SRC
