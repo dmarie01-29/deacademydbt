@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: public
+    tables:
+      - name: base_orders
+      - name: concat_address
+      - name: concat_name
+      - name: country_code
+      - name: customer
+      - name: customer_src
+      - name: customer_vw
+      - name: employee
+      - name: employee_raw
+      - name: final_orders
+      - name: my_first_dbt_model
+      - name: my_second_dbt_model
+      - name: patient_snapshot
+      - name: patient_src
+      - name: product_src
+      - name: products
+      - name: purchase
+        description: "{{ doc('order_status') }}"
+        # ref from the doc_block test.md. Its important to call the doc_block name in the ref as you can have many doc_blocks in this *.md file
+      - name: purchase_src
+      - name: sales
+      - name: sales_src
+      - name: session
+      - name: session_src

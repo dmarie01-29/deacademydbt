@@ -1,0 +1,12 @@
+# https://hub.getdbt.com
+
+# {{ codegen.generate_source(schema_name= 'jaffle_shop', database_name= 'raw') }}
+
+#generates automated source files from your database
+packages:
+  - package: dbt-labs/codegen
+    version: 0.14.0
+
+#generates tests
+  - package: metaplane/dbt_expectations
+    version: 0.10.10
